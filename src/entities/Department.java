@@ -62,7 +62,8 @@ public class Department {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Departamento Vendas = R$ " + String.format("%.2f", payroll()));
+		sb.append("FOLHA DE PAGAMENTO: ");
+		sb.append("\nDepartamento Vendas = R$ " + String.format("%.2f", payroll()));
 		sb.append("\nPagamento realizado no dia " + payDay);
 		sb.append("\nFuncionários: ");
 		for (Employee employee : employees) {

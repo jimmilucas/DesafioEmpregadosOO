@@ -27,7 +27,6 @@ public class Program {
 		String phone = sc.nextLine();
 		
 		Address address = new Address(email, phone);
-		
 		Department dept = new Department(departmentName, payDay, address);
 		
 		System.out.print("Quantos funcionários tem o departamento? ");
@@ -46,7 +45,6 @@ public class Program {
 			dept.addEmployee(employee);
 		}
 		
-		
 		showReport(dept);
 		
 		sc.close();
@@ -54,7 +52,6 @@ public class Program {
 	
 	private static void showReport(Department dept) {
 		System.out.println();
-		System.out.println("FOLHA DE PAGAMENTO: ");
 		System.out.println(dept);
 	}
 
